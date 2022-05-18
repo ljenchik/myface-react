@@ -1,0 +1,11 @@
+// _base.scss
+$background-color: #d5dfe5;
+$text-align: center;
+
+body {
+  background-color: $background-color;
+  text-align: $text-align;
+  li {
+    list-style-type: none;
+  }
+}
