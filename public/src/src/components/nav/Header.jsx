@@ -4,14 +4,16 @@ import "./Header.scss";
 
 export default function Header() {
   return (
-    <nav class="body">
-      <Link to="pages/Home">Home</Link>
-      <ul>
+    <nav className="header">
+      <ul className="link-container">
         <li>
-          <Link to="pages/Posts">Posts</Link>
+          <Link to="pages/Home" className="link">Home</Link>
         </li>
         <li>
-          <Link to="pages/Users">Users</Link>
+          <Link to="pages/Posts" className="link">Posts</Link>
+        </li>
+        <li>
+          <Link to="pages/Users" className="link">Users</Link>
         </li>
         {/* <li>
           <Link to="/posts/create">New Post</Link>
