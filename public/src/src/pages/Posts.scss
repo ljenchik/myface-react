@@ -1,15 +1,16 @@
 .Posts {
-    
+  margin: 0;
+  padding: 0;
 }
 
 .grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: space-around;
-    width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-around;
+  width: 99vw;
 }
 
 .post-header {
-    margin-top: 0;
-    padding-top: 70px;
+  margin-top: 0;
+  padding-top: 70px;
 }

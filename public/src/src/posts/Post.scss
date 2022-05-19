@@ -1,10 +1,14 @@
 .Post {
-    width: 25vw;
-    display: grid;
-    place-items: center;
+  width: 22vw;
+  display: grid;
+  place-items: center;
+  margin: 20px auto;
+  background-color: #d5dfe5;
+  border-radius: 8px;
 }
 
 .post-image {
-    width: 100px;
-    height: 100px;
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
 }
