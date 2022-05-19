@@ -4,11 +4,13 @@ import "./Post.scss";
 export default function Post({ postData }) {
   return (
     <div className="Post">
-      <p>{postData.postedBy.name}</p>
       <img src={postData.imageUrl} alt="post" className="post-image" />
-      <p>{postData.message}</p>
-      <p>{postData.postedBy.username}</p>
-      <p>{postData.postedBy.email}</p>
+      <div className="text-container">
+        <p className="bold">{postData.postedBy.name}</p>
+        <p>{postData.message}</p>
+      </div>
+      {/* <p>{postData.postedBy.username}</p>
+      <p>{postData.postedBy.email}</p> */}
     </div>
   );
 }
