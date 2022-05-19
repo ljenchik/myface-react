@@ -8,15 +8,33 @@ export default function NewPost() {
 
   function submitNewPost(event) {
     event.preventDefault();
-    console.log(imageUrl);
-    console.log(message);
+
+    if (canSubmit()) {
+      //do post request
+      console.log(imageUrl);
+      console.log(message);
+
+      fetch("http://localhost:3001/posts/create/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ message: message, imageUrl: imageUrl }),
+      })
+        .then((Response) => console.log(Response))
+        .catch((error) => console.log(error));
+    }
+  }
+
+  function canSubmit() {
+    let regex = /^https?:\/\/.*\/.*\.(png|webp|jpeg|jpg)\??.*$/gim;
+    return message.length > 0 && imageUrl.length > 0 && imageUrl.match(regex);
   }
 
   return (
     <div className="NewPost">
       <h1>New post</h1>
-      {message}
-      {imageUrl}
+
       <form className="grid-container">
         <label for="message">Your message:</label>
         <textarea
