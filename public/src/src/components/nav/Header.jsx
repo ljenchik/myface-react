@@ -15,10 +15,10 @@ export default function Header() {
         <li>
           <Link to="pages/Users" className="link">Users</Link>
         </li>
-        {/* <li>
-          <Link to="/posts/create">New Post</Link>
-        </li>
         <li>
+          <Link to="/posts/create">+ New Post</Link>
+        </li>
+        {/*<li>
           <Link to="/users/create">New User</Link>
         </li> */}
       </ul>
