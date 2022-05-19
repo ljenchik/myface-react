@@ -7,16 +7,24 @@ export default function Header() {
     <nav className="header">
       <ul className="link-container">
         <li>
-          <Link to="pages/Home" className="link">Home</Link>
+          <Link to="pages/Home" className="link">
+            Home
+          </Link>
         </li>
         <li>
-          <Link to="pages/Posts" className="link">Posts</Link>
+          <Link to="pages/Posts" className="link">
+            Posts
+          </Link>
         </li>
         <li>
-          <Link to="pages/Users" className="link">Users</Link>
+          <Link to="pages/Users" className="link">
+            Users
+          </Link>
         </li>
         <li>
-          <Link to="/posts/create">+ New Post</Link>
+          <Link to="pages/NewPost" className="link">
+            + New Post
+          </Link>
         </li>
         {/*<li>
           <Link to="/users/create">New User</Link>
