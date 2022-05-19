@@ -1,0 +1,13 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
+    width: 99vw;
+    gap: 50px;
+  }
+
+  .users-header {
+    margin-top: 0;
+    padding-top: 100px;
+  }
+
