@@ -26,9 +26,11 @@ export default function Header() {
             + New Post
           </Link>
         </li>
-        {/*<li>
-          <Link to="/users/create">New User</Link>
-        </li> */}
+        <li>
+          <Link to="pages/NewUser" className="link">
+            + New User
+          </Link>
+        </li>
       </ul>
     </nav>
   );
