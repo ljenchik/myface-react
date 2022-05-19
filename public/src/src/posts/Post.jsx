@@ -7,6 +7,7 @@ export default function Post({ postData }) {
       <img src={postData.imageUrl} alt="post" className="post-image" />
       <div className="text-container">
         <p className="bold">{postData.postedBy.name}</p>
+        <p className="date">{postData.createdAt.split(" ")[0]}</p>
         <p>{postData.message}</p>
       </div>
       {/* <p>{postData.postedBy.username}</p>

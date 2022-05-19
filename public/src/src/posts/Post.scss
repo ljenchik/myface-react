@@ -6,12 +6,14 @@ $border-radius: 8px;
   margin: $margin-size auto;
   background-color: #d5dfe5;
   border-radius: $border-radius;
+
   .post-image {
     margin: $margin-size auto 0 auto;
     width: 20vw;
     height: auto;
     border-radius: $border-radius;
   }
+
   .text-container {
     text-align: left;
     margin: $margin-size;
@@ -21,6 +23,10 @@ $border-radius: 8px;
     }
     .bold {
       font-weight: bold;
+      font-size: 20px;
+    }
+    .date {
+      font-weight: 100;
       font-size: small;
     }
   }
