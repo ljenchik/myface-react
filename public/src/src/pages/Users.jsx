@@ -1,4 +1,4 @@
-import User from "../components/users/User";
+import User from "../users/User";
 import React, { useEffect, useState } from "react";
 
 export default function Users() {

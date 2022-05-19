@@ -1,2 +1,10 @@
 .Post {
+    width: 25vw;
+    display: grid;
+    place-items: center;
+}
+
+.post-image {
+    width: 100px;
+    height: 100px;
 }

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Post from "../posts/Post";
+import "./Posts.scss";
 
 export default function Posts() {
   const [posts, setPosts] = useState(null);
@@ -11,13 +12,17 @@ export default function Posts() {
       .catch((error) => console.log("error"));
   }, []);
   return (
-    <div>
-      <h1>Posts Page</h1>
-      {posts ? (
-        posts.map((postData, index) => <Post postData={postData} key={index} />)
-      ) : (
-        <div>No Posts </div>
-      )}
+    <div className="Posts">
+      <h1 className="post-header">Posts Page</h1>
+      <div className="grid-container">
+        {posts ? (
+          posts.map((postData, index) => (
+            <Post postData={postData} key={index} />
+          ))
+        ) : (
+          <div>No Posts </div>
+        )}
+      </div>
     </div>
   );
 }
