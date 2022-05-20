@@ -15,7 +15,7 @@ export default function User({ userData }) {
         alt="user-cover-image"
       />
       <div className="text-container">
-        <p className="bold">{userData.name}</p>
+        <a href="users/userData.id" className="bold">{userData.name}</a>
         <p className="username">{userData.username}</p>
         <p>{userData.email}</p>
       </div>

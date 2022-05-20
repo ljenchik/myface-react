@@ -3,6 +3,7 @@ $background-color: #d5dfe5;
 
 .header {
   position: fixed;
+  z-index: 1;
   background-color: $background-color;
   width: 100vw;
   margin: 0;

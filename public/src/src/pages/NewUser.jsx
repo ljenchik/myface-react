@@ -53,6 +53,7 @@ export default function NewUser() {
         <label for="name">Your name:</label>
         <input
           required
+          className="img-url-box"
           name="name"
           type="text"
           placeholder="Type your name..."
@@ -61,6 +62,7 @@ export default function NewUser() {
         <label for="username">Your username:</label>
         <input
           required
+          className="img-url-box"
           name="username"
           type="text"
           placeholder="Type your username..."
@@ -69,6 +71,7 @@ export default function NewUser() {
         <label for="email">Your email:</label>
         <input
           required
+          className="img-url-box"
           name="email"
           type="email"
           placeholder="Type your email..."
