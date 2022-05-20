@@ -1,9 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./User.scss";
 
-export default function User({ userData }) {
+const MyContext = React.createContext({loggedIn: false});
+export default function User({ userData, setSelectedUser }) {
   return (
-    <div className="User">
+    <Link to="pages/UserDetails">
+    <div className="User" onClick = {() => setSelectedUser(userData)}>
       <img
         src={userData.profileImageUrl}
         className="profile-image"
@@ -15,10 +18,11 @@ export default function User({ userData }) {
         alt="user-cover-image"
       />
       <div className="text-container">
-        <a href="users/userData.id" className="bold">{userData.name}</a>
+        <p className="bold" >{userData.name}</p>
         <p className="username">{userData.username}</p>
         <p>{userData.email}</p>
       </div>
     </div>
+    </Link>
   );
 }

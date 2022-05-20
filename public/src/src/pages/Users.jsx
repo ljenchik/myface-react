@@ -4,7 +4,9 @@ import "./Users.scss"
 
 export default function Users() {
   const [users, setUsers] = useState(null);
-
+  const [selectedUser, setSelectedUser] = useState(null);
+  console.log(selectedUser);
+  
   useEffect(() => {
     fetch("http://localhost:3001/users")
       .then((response) => response.json())
@@ -15,7 +17,7 @@ export default function Users() {
     <h1 className="users-header">Users Page</h1>
     <div className="grid-container">
     {users ? (
-        users.map((userData, index) => <User userData={userData} key={index} />)
+        users.map((userData, index) => <User userData={userData} key={index} setSelectedUser = {setSelectedUser}/>)
       ) : (
         <div>No Users </div>
       )}

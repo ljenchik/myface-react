@@ -4,6 +4,7 @@ import Posts from "./pages/Posts";
 import Users from "./pages/Users";
 import NewPost from "./pages/NewPost";
 import NewUser from "./pages/NewUser";
+import UserDetails from "./pages/UserDetails";
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.scss";
@@ -19,6 +20,7 @@ function App() {
           <Route path="pages/Users" element={<Users />} />
           <Route path="pages/NewPost" element={<NewPost />} />
           <Route path="pages/NewUser" element={<NewUser />} />
+          <Route path="pages/UserDetails" element={<UserDetails />} />
         </Routes>
       </Router>
     </div>
