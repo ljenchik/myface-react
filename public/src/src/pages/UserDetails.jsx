@@ -1,4 +1,3 @@
-import { ContextHandlerImpl } from "express-validator/src/chain";
 import React from "react";
 import { useContext } from "react";
 import { SelectedUserDataContext } from "../App";
